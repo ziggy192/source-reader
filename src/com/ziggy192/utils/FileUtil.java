@@ -27,7 +27,7 @@ public class FileUtil {
 			for (int i = 0; i < questions.size(); i++) {
 
 				HCMQuestion question = questions.get(i);
-				writer.write(String.format("\"%s\",\"%s\",\"%s\"\n", question.getQuestionId(),question.getQuestionText(),question.getAnswerText()));
+				writer.write(String.format("\"%s\",\"%s\n%s\"\n", question.getQuestionId(),question.getQuestionText(),question.getAnswerText()));
 //				writer.write(question.getQuestionText());
 //				writer.write(DEFAULT_QUESTION_ANSWER_DELIMITER);
 //				writer.write(question.getAnswerText());
