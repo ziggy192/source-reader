@@ -1,5 +1,7 @@
 package com.ziggy192.model;
 
+import java.util.Objects;
+
 public class HCMQuestion  extends Question implements Comparable<HCMQuestion>{
 	private String questionId;
 
@@ -49,5 +51,18 @@ public class HCMQuestion  extends Question implements Comparable<HCMQuestion>{
 
 	public boolean isValidated() {
 		return this.questionId != null && this.getAnswerText() != null && this.getQuestionText() != null;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		HCMQuestion question = (HCMQuestion) o;
+		return Objects.equals(questionId, question.questionId);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(questionId);
 	}
 }

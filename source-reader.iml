@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.apache.commons:commons-text:1.6" level="application" />
+    <orderEntry type="library" exported="" name="com.opencsv:opencsv:4.4" level="project" />
   </component>
 </module>

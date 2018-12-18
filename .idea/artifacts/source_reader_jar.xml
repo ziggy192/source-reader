@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="source-reader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/source_reader_jar</output-path>
+    <root id="archive" name="source-reader.jar">
+      <element id="module-output" name="source-reader" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-text/1.6/commons-text-1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" path-in-jar="/" />
+      <element id="library" level="application" name="org.apache.commons:commons-text:1.6" />
+      <element id="artifact" artifact-name="com_opencsv_opencsv_4_4" />
+    </root>
+  </artifact>
+</component>
